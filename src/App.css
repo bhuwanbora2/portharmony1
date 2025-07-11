@@ -1,0 +1,208 @@
+/* Reset & base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.header {
+  background-color: #282c34;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.header a {
+  color: white;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: #61dafb;
+  color: #000;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+/* Sections */
+.about, .projects, .contact {
+  padding: 2rem 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about a {
+  margin: 0 0.25rem;
+}
+
+/* Projects Section */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 1rem;
+  max-width: 280px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.project-card p {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Contact Section */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  text-align: left;
+  margin-top: -0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
+/* Footer */
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  border-top: 1px solid #444;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+}
+
+.footer a {
+  color: #61dafb;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+h1 {
+  color: #fff9f9;
+  font-size: 1rem; /* You can adjust to 3rem or more if needed */
+  text-align: center; /* Optional: center the text */
+  margin: 1rem 0;
+}
+.hero {
+  background-image: url('https://4kwallpapers.com/images/wallpapers/i-love-coding-dark-2048x2048-16016.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10rem 1rem;
+  color: white;
+  text-align: center;
+}
